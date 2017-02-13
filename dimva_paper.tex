@@ -4,6 +4,102 @@
 \documentclass{llncs}
 \usepackage{llncsdoc}
 %
+
+
+% Great package for spaces in commands
+\usepackage{xspace}
+
+% for footnotes in tables
+\usepackage{tablefootnote}
+
+% for title caps
+\usepackage{titlecaps}
+\Addlcwords{and, the, or, of, that, our, by, a, prevent, for}
+
+% default options for listings
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{textcomp}     % access \textquotesingle
+\lstset{
+	backgroundcolor=\color{lightgray},
+	basicstyle=\scriptsize{}\ttfamily,
+	breaklines=true, 
+	captionpos=b,
+	commentstyle=\color{darkgreen}, 
+	frame=single,
+	keywordstyle=\color{blue}, 
+	numbers=left,
+	numbersep=5pt,
+	numberstyle=\tiny\color{mygray},
+	rulecolor=\color{black},
+	showstringspaces=false,
+	upquote=true,
+	belowskip=-6ex,
+}
+
+
+\newcommand{\dq}[1]{``{#1}''}
+%% THIS IS THE DATA FOR OUR THESIS, UPDATING HERE WILL UPDATE EVERYWHERE %%
+\newcommand{\urls}{23,553,796\xspace}
+
+\newcommand{\forms}{7,354,425\xspace}
+\newcommand{\formsDelta}{31.22\%\xspace}
+
+\newcommand{\emailforms}{1,228,774\xspace}
+\newcommand{\emailformsDelta}{16.71\%\xspace}
+
+\newcommand{\fuzzed}{1,012,530\xspace}
+\newcommand{\fuzzedDelta}{82.40\%\xspace}
+
+\newcommand{\recd}{74,192\xspace}
+\newcommand{\recdDelta}{7.33\%\xspace}
+
+\newcommand{\diffFoundFuzz}{9,682\xspace}
+\newcommand{\malfuzzed}{64,510\xspace}
+\newcommand{\malfuzzedDelta}{86.95\%\xspace}
+
+\newcommand{\success}{994\xspace}
+\newcommand{\successDelta}{1.54\%\xspace}
+\newcommand{\successWebsitesDelta}{0.038\%\xspace} % calc domains/total_domains 414/1,085,365
+
+\newcommand{\slowSelenium}{31.58\%\xspace}
+\newcommand{\slowParse}{11.05\%\xspace}
+
+\newcommand{\domains}{414\xspace}
+\newcommand{\ips}{604\xspace}
+
+\newcommand{\emailedDefaultmailbox}{113\xspace}
+\newcommand{\responses}{21\xspace}
+\newcommand{\confirmed}{15\xspace}
+
+
+\newcommand{\ipsblacklist}{157\xspace}
+\newcommand{\ipsblacklistmulti}{46\xspace}
+
+\newcommand{\ehibcc}{583\xspace}
+\newcommand{\ehixcheck}{493\xspace}
+\newcommand{\ehito}{229\xspace}
+\newcommand{\ehibccxcheck}{310\xspace}
+\newcommand{\ehitoxcheck}{15\xspace}
+\newcommand{\ehinuserxcheck}{239\xspace}
+\newcommand{\ehiuniquenuserxcheck}{182\xspace}
+
+% these refer to unique domains, not unique forms
+\newcommand{\uniqueforms}{1,085,365\xspace}
+\newcommand{\uniqueemailforms}{198,306\xspace}
+
+\newcommand{\totalattachmentcount}{2,950\xspace}
+\newcommand{\totalvirusattachmentcount}{265\xspace}
+\newcommand{\totalvirusemails}{443\xspace}
+
+\newcommand{\ehi}{E-\nobreak{}mail Header Injection\xspace}
+\newcommand{\emails}{\email{}s\xspace}
+\newcommand{\emailed}{\email{}ed\xspace}    
+\newcommand{\Email}{E-\nobreak{}mail\xspace}        
+\newcommand{\Emails}{\Email{}s\xspace}
+
+
+
 \begin{document}
 \markboth{\LaTeXe{} Class for Lecture Notes in Computer
 Science}{\LaTeXe{} Class for Lecture Notes in Computer Science}
@@ -67,8 +163,6 @@ $\bullet$&\multicolumn{3}{@{}l}{\bfseries We are also reachable through the worl
 
 
 %
-\newpage
-\tableofcontents
 \newpage
 %
 \section{Introduction}
