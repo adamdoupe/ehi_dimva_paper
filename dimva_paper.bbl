@@ -1,5 +1,21 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
+
+\bibitem{acumonitor}
+{Acunetix}: {AcuMonitor: For detecting Email Header Injection, Blind XSS and
+  SSRF - Acunetix}.
+  \url{http://www.acunetix.com/vulnerability-scanner/acumonitor-blind-xss-detection/}
+
+\bibitem{OWASPT10}
+OWASP: \url{https://www.owasp.org/index.php/OWASP_Top_10}
+
+\bibitem{rfc5322}
+Resnick, P.W.: {Internet Message Format - RFC 5322}  (2008),
+  \url{https://tools.ietf.org/html/rfc5322}
+
+\bibitem{commandinjection}
+Su, Z., Wassermann, G.: The essence of command injection attacks in web
+  applications. In: ACM SIGPLAN Notices. vol.~41, pp. 372--382. ACM (2006)
 
 \end{thebibliography}

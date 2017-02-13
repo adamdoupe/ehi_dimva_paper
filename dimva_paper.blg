@@ -2,47 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dimva_paper.aux
 The style file: splncs03.bst
-I found no \citation commands---while reading file dimva_paper.aux
 Database file #1: biblio.bib
-You've used 0 entries,
+Warning--empty journal in rfc5322
+Warning--can't use both volume and number fields in commandinjection
+You've used 4 entries,
             2785 wiz_defined-function locations,
-            583 strings with 4395 characters,
-and the built_in function-call counts, 22 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            604 strings with 4894 characters,
+and the built_in function-call counts, 1516 in all, are:
+= -- 117
+> -- 33
+< -- 2
++ -- 15
+- -- 10
+* -- 81
+:= -- 200
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 6
+duplicate$ -- 136
+empty$ -- 155
+format.name$ -- 11
+if$ -- 328
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 5
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 4
+missing$ -- 28
+newline$ -- 17
+num.names$ -- 8
+pop$ -- 66
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 13
 quote$ -- 0
-skip$ -- 1
+skip$ -- 51
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 69
+swap$ -- 63
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 4
-(There was 1 error message)
+type$ -- 16
+warning$ -- 2
+while$ -- 13
+width$ -- 5
+write$ -- 38
+(There were 2 warnings)
