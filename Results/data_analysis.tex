@@ -1,0 +1,30 @@
+\begin{table}[tbp]
+	\centering
+	\scriptsize
+	\begin{tabular}{|p{.32\textwidth}|p{.13\textwidth}|}
+		\hline
+		\textbf{Type of Injection} & \textbf{No. of e-mails received}\\
+		\hline
+		E-Mail Header Injections with \texttt{bcc} header & \ehibcc \\
+		\hline
+		E-Mail Header Injections with \texttt{x-check} header & \ehixcheck \\
+		\hline
+		\texttt{To header} injections alone & \ehito \\
+		\hline
+		Injections with both \texttt{bcc} and \texttt{x-check} headers & \ehibccxcheck \\
+		\hline
+		Both \texttt{To header} injections and x-check headers &
+		\ehitoxcheck \\
+		\hline
+		\texttt{x-check} headers found in \texttt{nuser} e-mails & \ehinuserxcheck \\
+		\hline
+		Unique \texttt{x-check} headers found in \texttt{nuser} e-mails & \ehiuniquenuserxcheck \\
+		\hline
+		Total successful injections (1 + 3 + 7) & \success \\
+		
+		\hline
+	\end{tabular}
+	\caption[\titlecap{Analysis of the data}]{Classification of the e-mails that we received into broad categories of the vulnerability.}
+    \vspace{-5ex}
+	\label{tab:analysis}
+\end{table}

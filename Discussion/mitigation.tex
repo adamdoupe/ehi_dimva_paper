@@ -1,0 +1,49 @@
+\subsection{Mitigation Strategy}
+\label{disc:mitigation}
+After demonstrating that \ehi vulnerabilities exist on the web at large, we now describe the most common measures that can be taken to prevent the occurrence of this vulnerability, or at least reduce the impact.
+
+Using a safe, well tested \email library is the preferred way of
+preventing \ehi vulnerabilities (removing the burden of input
+sanitization from the developer). A list of known secure libraries for
+each language and framework discussed is shown in
+Table~\ref{tab:maillib}.
+	\begin{table}[tbp]
+		\centering
+		\scriptsize
+		\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Language}} &
+			\multicolumn{1}{c|}{\textbf{Mail Libraries}} \\
+			\hline
+			PHP & {{PEAR Mail\cite{Hagenbuch2016}, PHPMailer\cite{PHPMailer2016}, Swiftmailer\cite{SwiftMailer2016}}}\\
+			\hline
+			Python & SMTPLib with email.header.Header\\
+			\hline
+			Java & Apache Commons E-Mail\cite{ACE2016}\\
+			\hline
+			Ruby & Ruby Mail \textgreater{}= 2.6\cite{RubyMailGem2016}\\
+			\hline
+			WordPress & Contact Form 7\cite{CF7}\\
+			\hline
+		\end{tabular}
+		\caption[\titlecap{Mail libraries that prevent e-mail header
+            injection}]{Mail libraries that prevent e-mail header
+          injection.}
+        \vspace{-5ex}        
+		\label{tab:maillib}
+	\end{table}
+
+Content management systems such as WordPress and Drupal include
+libraries and plugins to prevent \ehi. Thus, websites built with such
+CMS' are usually resistant to these attacks. However, it is advised to
+use the correct \email plugin, as not all plugins might be secure. An example of a secure plugin is shown in Table~\ref{tab:maillib}.
+
+If neither of the two options are feasible (in-house
+production, or lack of support infrastructure), developers can
+choose to perform proper input sanitization. Sanitization should be
+done with RFC5322~\cite{rfc5322} in mind to
+ensure that all edge cases are covered.
+	
+	%% Client Side validation alone is not sufficient, and must be supplemented by server-side validation to mitigate the attack. Constant updates to validation methods are required so that new attack vectors do not harm the website in any way.
+	%% Test driven development for such validation methods is also encouraged so that we can be reasonably sure of our defense mechanisms.
+

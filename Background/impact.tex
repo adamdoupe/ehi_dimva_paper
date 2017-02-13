@@ -1,0 +1,50 @@
+\subsection{Impact of \ehi}
+
+The impact of an \ehi vulnerability can be far-reaching. According to
+w3tech, PHP, Java, Python, and Ruby (combined) account for over
+85\%\, of the server-side programming languages in
+websites measured, and the default implementation of the \email functionality of these languages is vulnerable to \ehi. 
+
+
+
+%% \begin{table}[!tb]
+%% 	\centering
+%% 	\begin{tabular}{|p{4cm}|p{4cm}|}
+%% 		\hline
+%% 		\multicolumn{1}{|c|}{\textbf{Server Side Language}} & \multicolumn{1}{c|}{\textbf{\% of Usage}}\\
+%% 		\hline
+%% 		PHP & 81.9\\
+%% 		\hline
+%% 		Java & 3.1\\
+%% 		\hline
+%% 		Ruby & 0.6\\
+%% 		\hline
+%% 		Python & 0.2\\
+%% 		\hline
+		
+%% 	\end{tabular}
+%% 	\caption[\titlecap{Language usage statistics}]{Language usage statistics compiled from w3techs~\cite{W3techs}.}
+%% 	\label{tab:usage}
+%% \end{table}
+
+An \ehi vulnerability can be exploited to do potentially any of the
+following:
+
+\noindent \textbf{Phishing and Spoofing Attacks} 
+    Phishing~\cite{phishing} (a variation of spoofing~\cite{spoofing_attack}) refers to an attack where the recipient of an \email is made to believe that the \email is  legitimate when it was really created by a malicious party. The \email usually redirects the victim to a malicious website, which then steals their credentials or infects their computer with malware (via a drive-by-download).  
+    
+    \ehi gives attackers the ability to inject arbitrary headers into an \email sent by a website \emph{and control the output of the \email}. This adds credibility to the generated \email, as it is sent from the website's mail server and users (and anti-spam defenses) are more likely to trust an e-mail that is received from the proper mail server. Therefore, attackers could leverage \ehi vulnerabilities to perform enhanced phishing attacks. 
+	
+\noindent\textbf{Spam Networks}
+	Spam networks can use \ehi vulnerabilities to send a large amount of \email from servers that are trusted. By adding additional \texttt{cc} or \texttt{bcc} headers to the generated e-mail, attackers can easily choose the recipient of the spam email. 
+	
+	Due to the \email being from trusted domains, recipient \email clients and anti-spam systems might not flag them as spam. If they do flag them as spam, then that can lead to the website being blacklisted as a spam generator (which would cause a Denial of Service on the vulnerable web application). 
+	
+\noindent\textbf{Information Extraction}
+	\Emails can contain sensitive data that is meant to be accessed only by the user. Due to an \ehi vulnerability, an attacker can add a \texttt{bcc} header, and the \email server will send a copy of the \email to the attacker, thereby exposing important information.
+	User privacy can thus be compromised, and loss of private information can by itself lead to other attacks.
+
+    \noindent\textbf{Denial of Service}
+    Denial of service attacks (DoS), can also be caused by exploiting an \ehi vulnerability to send excessive \emails resulting in overloading the mail server and cause crashes or instability. 
+
+%It is evident that E-Mail Header Injection is a critical vulnerability that web applications must address.

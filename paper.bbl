@@ -1,0 +1,289 @@
+\begin{thebibliography}{10}
+
+\bibitem{nutch}
+{Apache Nutch}.
+\newblock \url{http://nutch.apache.org/}.
+
+\bibitem{CF7}
+{ContactForm7}.
+\newblock \url{https://wordpress.org/plugins/contact-form-7}.
+
+\bibitem{Tendencies2014}
+{Vexatious Tendencies}.
+\newblock
+  \url{https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/},
+  2014.
+
+\bibitem{cve}
+{CVE - Common Vulnerabilities and Exposures (CVE)}, 2016.
+
+\bibitem{whois}
+{ICANN WHOIS Data}.
+\newblock \url{https://whois.icann.org/en}, 2016.
+
+\bibitem{virustotal}
+{VirusTotal - Free Online Virus, Malware and URL Scanner}, 2016.
+
+\bibitem{acumonitor}
+{Acunetix}.
+\newblock {AcuMonitor: For detecting Email Header Injection, Blind XSS and SSRF
+  - Acunetix}.
+\newblock
+  \url{http://www.acunetix.com/vulnerability-scanner/acumonitor-blind-xss-detection/}.
+
+\bibitem{ACE2016}
+{Apache Commons Email}, 2016.
+
+\bibitem{black-box}
+J.~Bau, E.~Bursztein, D.~Gupta, and J.~Mitchell.
+\newblock State of the art: Automated black-box web application vulnerability
+  testing.
+\newblock In {\em Security and Privacy (SP), 2010 IEEE Symposium on}, pages
+  332--345, May 2010.
+
+\bibitem{Beizer:1995:BTT:202699}
+B.~Beizer.
+\newblock {\em Black-box Testing: Techniques for Functional Testing of Software
+  and Systems}.
+\newblock John Wiley \& Sons, Inc., New York, NY, USA, 1995.
+
+\bibitem{BestWebSoft2016}
+BestWebSoft.
+\newblock {Contact Form by BestWebSoft WordPress Plugins}.
+\newblock \url{https://wordpress.org/plugins/contact-form-plugin/}, 2016.
+
+\bibitem{httpperf}
+C.~W. Bhide, J.~Singh, and D.~Oestreicher.
+\newblock Performance optimizations for computer networks utilizing http,
+  Dec.~22 1998.
+\newblock US Patent 5,852,717.
+
+\bibitem{sql1}
+S.~W. Boyd and A.~D. Keromytis.
+\newblock Sqlrand: Preventing sql injection attacks.
+\newblock In {\em Applied Cryptography and Network Security}, pages 292--302.
+  Springer, 2004.
+
+\bibitem{Calin}
+B.~Calin.
+\newblock {Email Header Injection Web Vulnerability - Acunetix}.
+\newblock
+  \url{https://www.acunetix.com/blog/articles/email-header-injection-web-vulnerability-detection/},
+  2013.
+
+\bibitem{rfc2142}
+D.~Crocker.
+\newblock {Internet Message Format - RFC 2142}.
+\newblock 1997.
+
+\bibitem{Doupe2012}
+A.~Doup{\'e}, L.~Cavedon, C.~Kruegel, and G.~Vigna.
+\newblock Enemy of the state: A state-aware black-box web vulnerability
+  scanner.
+\newblock In {\em Presented as part of the 21st USENIX Security Symposium
+  (USENIX Security 12)}, pages 523--538, Bellevue, WA, 2012. USENIX.
+
+\bibitem{Doupe2010}
+A.~Doup{\'e}, M.~Cova, and G.~Vigna.
+\newblock Why johnny can't pentest: An analysis of black-box web vulnerability
+  scanners.
+\newblock In {\em Detection of Intrusions and Malware, and Vulnerability
+  Assessment}, pages 111--131. Springer, 2010.
+
+\bibitem{spoofing_attack}
+E.~W. Felten, D.~Balfanz, D.~Dean, and D.~S. Wallach.
+\newblock Web spoofing: An internet con game.
+\newblock {\em Software World}, 28(2), 1997.
+
+\bibitem{rfc2616}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, T.~Berners-Lee, L.~Masinter, and
+  P.~Leach.
+\newblock {RFC 2616}.
+\newblock 1999.
+
+\bibitem{Hagenbuch2016}
+C.~Hagenbuch, R.~Heyes, and A.~Machniak.
+\newblock {PEARMail}, 2016.
+
+\bibitem{sql0}
+W.~G. Halfond, J.~Viegas, and A.~Orso.
+\newblock A classification of sql-injection attacks and countermeasures.
+\newblock In {\em Proceedings of the IEEE Symposium on Secure Software
+  Engineering}, 2006.
+
+\bibitem{Herzog.2014}
+A.~Herzog.
+\newblock {Full Disclosure: JavaMail SMTP Header Injection via method
+  setSubject [CSNC-2014-001]}, 2014.
+
+\bibitem{Huang}
+Y.-W. Huang, S.-K. Huang, T.-P. Lin, and C.-H. Tsai.
+\newblock Web application security assessment by fault injection and behavior
+  monitoring.
+\newblock In {\em Proceedings of the 12th International Conference on World
+  Wide Web}, WWW '03. ACM, 2003.
+
+\bibitem{InternetLiveStats2016}
+{Internet Live Stats}.
+\newblock \url{www.internetlivestats.com}, 2016.
+
+\bibitem{phishing}
+M.~Jakobsson and S.~Myers.
+\newblock {\em Phishing and countermeasures: understanding the increasing
+  problem of electronic identity theft}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem{Injection1}
+T.~Jim, N.~Swamy, and M.~Hicks.
+\newblock Defeating script injection attacks with browser-enforced embedded
+  policies.
+\newblock In {\em Proceedings of the 16th International Conference on World
+  Wide Web}, WWW '07, pages 601--610, New York, NY, USA, 2007. ACM.
+
+\bibitem{sessionride}
+M.~Johns and J.~Winter.
+\newblock Requestrodeo: Client side protection against session riding.
+\newblock In {\em Proceedings of the OWASP}, 2006.
+
+\bibitem{kals2006secubat}
+S.~Kals, E.~Kirda, C.~Kruegel, and N.~Jovanovic.
+\newblock Secubat: a web vulnerability scanner.
+\newblock In {\em Proceedings of the 15th international conference on World
+  Wide Web}, pages 247--256. ACM, 2006.
+
+\bibitem{KleinAmit}
+A.~Klein.
+\newblock {[DOM Based Cross Site Scripting or XSS of the Third Kind] Web
+  Security Articles - WebApp Sec}, 2005.
+
+\bibitem{DK}
+D.~Kohler.
+\newblock {damonkohler: Email Injection}.
+\newblock \url{http://www.damonkohler.com/2008/12/email-injection.html}, 2008.
+
+\bibitem{csrf}
+X.~Lin, P.~Zavarsky, R.~Ruhl, and D.~Lindskog.
+\newblock Threat modeling for csrf attacks.
+\newblock In {\em CSE (3)}, pages 486--491, 2009.
+
+\bibitem{Injection2}
+A.~Mohamed.
+\newblock {PHP Email Injection Example - InfoSec Resources}.
+\newblock \url{http://resources.infosecinstitute.com/email-injection/}, 2013.
+
+\bibitem{Nicol}
+J.~Nicol.
+\newblock {Securing PHP Contact Forms}.
+\newblock
+  \url{http://jonathannicol.com/blog/2006/12/09/securing-php-contact-forms/},
+  2006.
+
+\bibitem{OWASPT10}
+OWASP.
+\newblock \url{https://www.owasp.org/index.php/OWASP_Top_10}.
+
+\bibitem{payet13:ears-in-the-wild}
+P.~Payet, A.~Doup\'e, C.~Kruegel, and G.~Vigna.
+\newblock {EARs in the Wild: Large-Scale Analysis of Execution After Redirect
+  Vulnerabilities}.
+\newblock In {\em Proceedings of the ACM Symposium on Applied Computing (SAC)},
+  Coimbra, Portugal, March 2013.
+
+\bibitem{PHPDocs}
+PHP-Manual.
+\newblock {PHP mail - Send mail}.
+\newblock \url{http://php.net/manual/en/function.mail.php}, 2016.
+
+\bibitem{PHPMailer2016}
+PHPMailer.
+\newblock \url{https://github.com/PHPMailer/PHPMailer}.
+
+\bibitem{Pope}
+A.~Pope.
+\newblock {Prevent Contact Form Spam Email Header Injection | Storm Consultancy
+  Web Design Bath}, 2008.
+
+\bibitem{captchas3}
+C.~Pope and K.~Kaur.
+\newblock Is it human or computer? defending e-commerce with captchas.
+\newblock {\em IT Professional}, 7(2), Mar 2005.
+
+\bibitem{raghavan2000crawling}
+S.~Raghavan and H.~Garcia-Molina.
+\newblock Crawling the hidden web.
+\newblock Technical Report 2000-36, Stanford InfoLab, 2000.
+
+\bibitem{rfc5322}
+P.~W. Resnick.
+\newblock {Internet Message Format - RFC 5322}.
+\newblock 2008.
+
+\bibitem{RubyMailGem2016}
+{Ruby Mail Gem}.
+\newblock \url{https://rubygems.org/gems/mail}.
+
+\bibitem{sql2}
+A.~Sadeghian, M.~Zamani, and A.~A. Manaf.
+\newblock A taxonomy of sql injection detection and prevention techniques.
+\newblock In {\em Informatics and Creative Multimedia (ICICM), 2013
+  International Conference on}, pages 53--56. IEEE, 2013.
+
+\bibitem{Injection}
+{Email Injection - Secure PHP Wiki}.
+\newblock \url{http://securephpwiki.com/index.php/Email Injection}, 2010.
+
+\bibitem{ShkapenyukTorstenSuel2001}
+V.~Shkapenyuk and T.~Suel.
+\newblock Design and implementation of a high-performance distributed web
+  crawler.
+\newblock pages 357--368, 2002.
+
+\bibitem{stuttard2011web}
+D.~Stuttard and M.~Pinto.
+\newblock {\em The Web Application Hacker's Handbook: Finding and Exploiting
+  Security Flaws}.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem{commandinjection}
+Z.~Su and G.~Wassermann.
+\newblock The essence of command injection attacks in web applications.
+\newblock In {\em ACM SIGPLAN Notices}, volume~41, pages 372--382. ACM, 2006.
+
+\bibitem{SwiftMailer2016}
+{SwiftMailer}.
+\newblock \url{http://swiftmailer.org/}.
+
+\bibitem{Terada2015}
+T.~Terada.
+\newblock {SMTP Injection via recipient email addresses}.
+\newblock {\em {MBSD White Paper}}, December 2015.
+
+\bibitem{Tobozo}
+Tobozo.
+\newblock {Mail headers injections with PHP}.
+\newblock \url{http://www.phpsecure.info/v2/article/MailHeadersInject.en.php},
+  2004.
+
+\bibitem{captchas2}
+L.~von Ahn, M.~Blum, and J.~Langford.
+\newblock Telling humans and computers apart automatically.
+\newblock {\em Commun. ACM}, 47(2), 2004.
+
+\bibitem{W3techs}
+W3techs.
+\newblock {Usage Statistics and Market Share of PHP for Websites, February
+  2016}.
+\newblock \url{http://w3techs.com/technologies/details/pl-php/all/all}, 2016.
+
+\bibitem{captchas}
+J.~Yan and A.~S.~E. Ahmad.
+\newblock Breaking visual captchas with naive pattern recognition algorithms.
+\newblock In {\em Computer Security Applications Conference, ACSAC 2007}, Dec
+  2007.
+
+\bibitem{zanero2005automatic}
+S.~Zanero, L.~Carettoni, and M.~Zanchetta.
+\newblock Automatic detection of web application security flaws.
+\newblock {\em Black Hat Briefings}, 2005.
+
+\end{thebibliography}

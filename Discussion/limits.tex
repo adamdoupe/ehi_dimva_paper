@@ -1,0 +1,76 @@
+\subsection[Limitations]{Limitations}
+\label{limitations}
+		Because our system is fully automated, it is also susceptible to being stopped by mechanisms in web applications that prevent automated crawls or form submissions. A common reason for our fuzzing attempts to fail is the bot-blocking mechanisms built into the web applications. CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart)~\cite{captchas2} pose a very difficult problem for our system to exploit \ehi, even if it is present.
+		Other measures such as hidden form fields and CSRF (Cross-site Request Forgery~\cite{csrf}) tokens are also often used to detect bots~\cite{captchas3, captchas2}.
+
+		We made sure that we do not fuzz hidden fields in the form, and because our system does not depend on authenticated sessions, CSRF tokens do not pose an issue. However, despite considerable active research in breaking CAPTCHAs~\cite{captchas2, captchas}, breaking CAPTCHAs remains out of the scope of this project. 
+		
+	   Due to the growing emphasis on responsive web applications, more and more web applications are being built with only client-side JavaScript. Even conventional web applications use JavaScript to dynamically insert content and update the pages. This trend means that these dynamically injected HTML components are not part of the initial HTML that is sent to the client by the server.
+
+		Thus, our system will not see dynamically injected forms and hence is unable to detect whether \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
+		
+		%TODO Adam: added a table here, and explanation about performance tradeoffs with Selenium and bs4.
+		A comparison of the running times between the different approaches is shown in Table~\ref{tab:perf}. We chose not to use Selenium as it results in a slowdown of \slowSelenium. 
+		
+		\begin{table}
+			\centering
+			\scriptsize
+			\begin{tabular}{|p{4cm}|c|c|}
+				\hline
+				\multicolumn{1}{|c}{\textbf{Method}} &
+				\multicolumn{1}{|c|}{\textbf{Running time}} &
+				\multicolumn{1}{|c|}{\textbf{Slowdown}}
+				\\
+				\hline
+				\centering Using our pipeline & 629.043 & - \\
+				\hline
+				\centering Our pipeline with Selenium & 919.372 & \slowSelenium \\
+				\hline				
+				\centering Parsing \email fields instead of `grep'ing& 707.154 & \slowParse \\								
+				\hline
+			\end{tabular}
+			\caption[\titlecap{}]{Running times in seconds for crawling, parsing, and detecting presence of \email fields in 1000 random wikipedia pages.}
+            \vspace{-5ex}
+			\label{tab:perf}
+		\end{table}
+
+        Because we search for the words \texttt{e-mail}, \texttt{mail}, or \texttt{email} within the HTML form, if the website does not use English names for its forms, our system will not be able to find the presence of an \email field. An example is by using the French word for \texttt{e-mail}---courrier {{\'e}}lectronique--- our system is unable to find the presence of the e-mail field. 
+        
+		During the crawl, our system was blacklisted by a few web
+        applications (mostly WordPress ones), and Internet Service
+        Providers (ISPs). To overcome this, we did two things: (1)
+        used an IP range of 60 different IP addresses, and (2) Used a
+        blacklist of our own to prevent our Fuzzer from fuzzing
+        applications that are known to blacklist automated crawlers.
+        This restricted us from gathering data about these
+        applications.
+
+
+		We found that certain WordPress plugins prevent the \ehi attack by sanitizing user input on contact forms. Although not all  WordPress web applications are secure, between the presence of the plugins on some websites, and getting tagged as ``spambots'' by others, we found few vulnerabilities on WordPress web applications.
+
+        E-Mail libraries such as the PHP Extension and Application Repository's (PEAR) mail library provide sanitization for user input. While this is not strictly a limitation of our project, it still means that we are not able to inject sites that used these libraries.
+
+        The parser that we use for HTML parsing---Beautiful Soup---does not parse heavily malformed HTML and throws an exception on encountering such HTML. Thus, we have designed the system to exit gracefully on such occasions. A side-effect of this is that our system is unable to test web applications with very bad HTML markup.
+
+        Black-box testing is highly beneficial as explained in Section~\ref{sys:appr}, however it also has a drawback in that we cannot verify whether the reported vulnerability exists in the source code or is a feature of the website (e.g., the website allows users to send bulk e-mail, adding many \texttt{cc} or \texttt{bcc} headers). We must manually notify the developers to get this feedback.
+
+%%        	As discussed in Section~\ref{Comp:EMFC}, we only search for the words \texttt{email}, \texttt{mail} or \texttt{e-mail} (case insensitive) inside the forms to detect the presence of e-mail fields, instead of searching for an \colorbox{lightgray}{\lstinline{<input type = email>}}. This might result in a false positive in certain forms, like the one shown in Listing~\ref{code:false_positive}.
+
+%%        	\begin{lstlisting}[language=HTML,caption={E-Mail field checker
+%%               - false positives, the system incorrectly classifies
+%%               this as an e-mail form.},label={code:false_positive}, float]
+%% <form method="post">
+%% E-Mail us if you have any questions!!
+%% <input type="text" name="query"><br>
+%% <input type="submit" value="Search">
+%% </form>
+%%        	\end{lstlisting}
+
+%%        	The word \texttt{E-Mail} on Line 2 will result in our system classifying this form as a potential e-mail form, while it clearly is not. However, as we will see, this is not really a significant issue, as despite being added to the \texttt{email\_forms} table, this form will never be injected in the `fuzzer' due to the absence of the appropriate input field in the form. We chose to go with this design, as it allows us to detect almost every form that provides the capability to send or receive e-mail.
+
+%\begin{lstlisting}[language=HTML,caption={e-mail field in a different language - French.},label={code:htmlfrench}, literate=%
+%	{é}{{\'e}}1, float]
+%<input type="text" 
+%placeholder="courrier électronique"
+%name="courrier_électronique">
+%\end{lstlisting}

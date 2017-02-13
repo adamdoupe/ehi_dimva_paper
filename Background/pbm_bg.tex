@@ -1,0 +1,6 @@
+\ehi belongs to the class of command injection vulnerabilities. However, unlike its more popular siblings, SQL injection~\cite{sql1, sql0, sql2}, Cross-Site Scripting~\cite{Injection1, KleinAmit}, or HTTP Header Injection~\cite{sessionride}, relatively little research is available on \ehi vulnerabilities.
+
+As with other command injection vulnerabilities, \ehi is caused by
+improper or nonexistent sanitization of user input. If the program
+constructs \emails from user input and fails to check for the presence
+of \email headers, a malicious user can control the headers of this particular e-mail. \ehi vulnerabilities can be leveraged to enable malicious attacks, including, but not limited to, spoofing or phishing.
