@@ -11,6 +11,8 @@
 \definecolor{mygray}{rgb}{0.6,0.6,0.6}
 \definecolor{lightgray}{rgb}{0.92,0.92,0.92}
 \definecolor{darkgreen}{rgb}{0,0.7,0}
+\usepackage[justification=centering]{caption}
+\captionsetup[table]{skip=1pt}
 
 % Great package for spaces in commands
 \usepackage{xspace}
@@ -143,67 +145,14 @@
 
 %	\input{exp_setup}
 
-\section{Other Sections}\label{sec:Others}
+\input{results}
 
-Other sections are here. 
+\input{discussion}
 
+\input{rel_work}
 
-\section{Conclusion}\label{sec:Conclusion}
+\input{conclusion}
 
-Conclusions are here.
-
-%
-\newpage
-%
-%
-\section {Footnotes}
-%
-Footnotes within the text should be coded:
-\begin{verbatim}
-\footnote{Text}
-\end{verbatim}
-{\itshape Sample Input}
-\begin{flushleft}
-Text with a footnote\verb|\footnote{The |{\tt footnote is automatically
-numbered.}\verb|}| and text continues \dots
-\end{flushleft}
-{\itshape Sample Output}
-\begin{flushleft}
-Text with a footnote\footnote{The footnote is automatically numbered.}
-and text continues \dots
-\end{flushleft}
-%
-
-\section{Tables}
-%
-Table captions should be treated
-in the same way as figure legends, except that
-the table captions appear {\itshape above} the tables. The tables
-will be numbered automatically.
-%
-\subsection{Tables Coded with \protect\LaTeX{}}
-
-\medskip\noindent{\itshape Sample Output}
-\begin{table}
-\caption{Critical $N$ values}
-\begin{center}
-\renewcommand{\arraystretch}{1.4}
-\setlength\tabcolsep{3pt}
-\begin{tabular}{llllll}
-\hline\noalign{\smallskip}
-${\mathrm M}_\odot$ & $\beta_{0}$ & $T_{\mathrm c6}$ & $\gamma$
-  & $N_{\mathrm{crit}}^{\mathrm L}$
-  & $N_{\mathrm{crit}}^{\mathrm{Te}}$\\
-\noalign{\smallskip}
-\hline
-\noalign{\smallskip}
- 30 & 0.82 & 38.4 & 35.7 & 154 & 320 \\
- 60 & 0.67 & 42.1 & 34.7 & 138 & 340 \\
-120 & 0.52 & 45.1 & 34.0 & 124 & 370 \\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
 
 % adding bibliography here, apparently LNCS prefers inline instead of .bib
 \bibliographystyle{splncs03}

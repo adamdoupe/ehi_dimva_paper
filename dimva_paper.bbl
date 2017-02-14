@@ -5,18 +5,51 @@
 \bibitem{nutch}
 {Apache Nutch}. \url{http://nutch.apache.org/}
 
+\bibitem{CF7}
+{ContactForm7}. \url{https://wordpress.org/plugins/contact-form-7}
+
+\bibitem{Tendencies2014}
+{Vexatious Tendencies}.
+  \url{https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/}
+  (2014)
+
 \bibitem{cve}
 {CVE - Common Vulnerabilities and Exposures (CVE)} (2016),
   \url{http://cve.mitre.org/}
+
+\bibitem{whois}
+{ICANN WHOIS Data}. \url{https://whois.icann.org/en} (2016)
+
+\bibitem{virustotal}
+{VirusTotal - Free Online Virus, Malware and URL Scanner} (2016),
+  \url{https://www.virustotal.com/}
 
 \bibitem{acumonitor}
 {Acunetix}: {AcuMonitor: For detecting Email Header Injection, Blind XSS and
   SSRF - Acunetix}.
   \url{http://www.acunetix.com/vulnerability-scanner/acumonitor-blind-xss-detection/}
 
+\bibitem{captchas2}
+von Ahn, L., Blum, M., Langford, J.: Telling humans and computers apart
+  automatically. Commun. ACM  47(2) (2004),
+  \url{http://doi.acm.org/10.1145/966389.966390}
+
+\bibitem{ACE2016}
+{Apache Commons Email}:  (2016),
+  \url{https://commons.apache.org/proper/commons-email}
+
+\bibitem{black-box}
+Bau, J., Bursztein, E., Gupta, D., Mitchell, J.: State of the art: Automated
+  black-box web application vulnerability testing. In: Security and Privacy
+  (SP), 2010 IEEE Symposium on. pp. 332--345 (May 2010)
+
 \bibitem{Beizer:1995:BTT:202699}
 Beizer, B.: Black-box Testing: Techniques for Functional Testing of Software
   and Systems. John Wiley \& Sons, Inc., New York, NY, USA (1995)
+
+\bibitem{BestWebSoft2016}
+BestWebSoft: {Contact Form by BestWebSoft WordPress Plugins}.
+  \url{https://wordpress.org/plugins/contact-form-plugin/} (2016)
 
 \bibitem{httpperf}
 Bhide, C.W., Singh, J., Oestreicher, D.: Performance optimizations for computer
@@ -26,6 +59,27 @@ Bhide, C.W., Singh, J., Oestreicher, D.: Performance optimizations for computer
 Boyd, S.W., Keromytis, A.D.: Sqlrand: Preventing sql injection attacks. In:
   Applied Cryptography and Network Security. pp. 292--302. Springer (2004)
 
+\bibitem{Calin}
+Calin, B.: {Email Header Injection Web Vulnerability - Acunetix}.
+  \url{https://www.acunetix.com/blog/articles/email-header-injection-web-vulnerability-detection/}
+  (2013)
+
+\bibitem{rfc2142}
+Crocker, D.: {Internet Message Format - RFC 2142}  (1997),
+  \url{https://www.ietf.org/rfc/rfc2142}
+
+\bibitem{Doupe2012}
+Doup{\'e}, A., Cavedon, L., Kruegel, C., Vigna, G.: Enemy of the state: A
+  state-aware black-box web vulnerability scanner. In: Presented as part of the
+  21st USENIX Security Symposium (USENIX Security 12). pp. 523--538. USENIX,
+  Bellevue, WA (2012),
+  \url{https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final225.pdf}
+
+\bibitem{Doupe2010}
+Doup{\'e}, A., Cova, M., Vigna, G.: Why johnny can't pentest: An analysis of
+  black-box web vulnerability scanners. In: Detection of Intrusions and
+  Malware, and Vulnerability Assessment, pp. 111--131. Springer (2010)
+
 \bibitem{spoofing_attack}
 Felten, E.W., Balfanz, D., Dean, D., Wallach, D.S.: Web spoofing: An internet
   con game. Software World  28(2) (1997)
@@ -33,6 +87,10 @@ Felten, E.W., Balfanz, D., Dean, D., Wallach, D.S.: Web spoofing: An internet
 \bibitem{rfc2616}
 Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Berners-Lee, T., Masinter,
   L., Leach, P.: {RFC 2616}  (1999), \url{https://www.ietf.org/rfc/rfc2616.txt}
+
+\bibitem{Hagenbuch2016}
+Hagenbuch, C., Heyes, R., Machniak, A.: {PEARMail} (2016),
+  \url{https://pear.php.net/package/Mail}
 
 \bibitem{sql0}
 Halfond, W.G., Viegas, J., Orso, A.: A classification of sql-injection attacks
@@ -43,6 +101,15 @@ Halfond, W.G., Viegas, J., Orso, A.: A classification of sql-injection attacks
 Herzog, A.: {Full Disclosure: JavaMail SMTP Header Injection via method
   setSubject [CSNC-2014-001]} (2014),
   \url{http://seclists.org/fulldisclosure/2014/May/81}
+
+\bibitem{Huang}
+Huang, Y.W., Huang, S.K., Lin, T.P., Tsai, C.H.: Web application security
+  assessment by fault injection and behavior monitoring. In: Proceedings of the
+  12th International Conference on World Wide Web. WWW '03, ACM (2003),
+  \url{http://doi.acm.org/10.1145/775152.775174}
+
+\bibitem{InternetLiveStats2016}
+{Internet Live Stats}: \url{www.internetlivestats.com} (2016)
 
 \bibitem{phishing}
 Jakobsson, M., Myers, S.: Phishing and countermeasures: understanding the
@@ -58,6 +125,11 @@ Jim, T., Swamy, N., Hicks, M.: Defeating script injection attacks with
 Johns, M., Winter, J.: Requestrodeo: Client side protection against session
   riding. In: Proceedings of the OWASP (2006)
 
+\bibitem{kals2006secubat}
+Kals, S., Kirda, E., Kruegel, C., Jovanovic, N.: Secubat: a web vulnerability
+  scanner. In: Proceedings of the 15th international conference on World Wide
+  Web. pp. 247--256. ACM (2006)
+
 \bibitem{KleinAmit}
 Klein, A.: {[DOM Based Cross Site Scripting or XSS of the Third Kind] Web
   Security Articles - WebApp Sec} (2005),
@@ -67,12 +139,42 @@ Klein, A.: {[DOM Based Cross Site Scripting or XSS of the Third Kind] Web
 Kohler, D.: {damonkohler: Email Injection}.
   \url{http://www.damonkohler.com/2008/12/email-injection.html} (2008)
 
+\bibitem{csrf}
+Lin, X., Zavarsky, P., Ruhl, R., Lindskog, D.: Threat modeling for csrf
+  attacks. In: CSE (3). pp. 486--491 (2009)
+
+\bibitem{Injection2}
+Mohamed, A.: {PHP Email Injection Example - InfoSec Resources}.
+  \url{http://resources.infosecinstitute.com/email-injection/} (2013)
+
+\bibitem{Nicol}
+Nicol, J.: {Securing PHP Contact Forms}.
+  \url{http://jonathannicol.com/blog/2006/12/09/securing-php-contact-forms/}
+  (2006)
+
 \bibitem{OWASPT10}
 OWASP: \url{https://www.owasp.org/index.php/OWASP_Top_10}
+
+\bibitem{payet13:ears-in-the-wild}
+Payet, P., Doup\'e, A., Kruegel, C., Vigna, G.: {EARs in the Wild: Large-Scale
+  Analysis of Execution After Redirect Vulnerabilities}. In: Proceedings of the
+  ACM Symposium on Applied Computing (SAC). Coimbra, Portugal (March 2013)
 
 \bibitem{PHPDocs}
 PHP-Manual: {PHP mail - Send mail}.
   \url{http://php.net/manual/en/function.mail.php} (2016)
+
+\bibitem{PHPMailer2016}
+PHPMailer: \url{https://github.com/PHPMailer/PHPMailer}
+
+\bibitem{Pope}
+Pope, A.: {Prevent Contact Form Spam Email Header Injection | Storm Consultancy
+  Web Design Bath} (2008),
+  \url{https://www.stormconsultancy.co.uk/blog/development/dev-tutorials/secure-your-contact-form-against-spam-email-header-injection/}
+
+\bibitem{captchas3}
+Pope, C., Kaur, K.: Is it human or computer? defending e-commerce with
+  captchas. IT Professional  7(2) (Mar 2005)
 
 \bibitem{raghavan2000crawling}
 Raghavan, S., Garcia-Molina, H.: Crawling the hidden web. Technical Report
@@ -81,6 +183,9 @@ Raghavan, S., Garcia-Molina, H.: Crawling the hidden web. Technical Report
 \bibitem{rfc5322}
 Resnick, P.W.: {Internet Message Format - RFC 5322}  (2008),
   \url{https://tools.ietf.org/html/rfc5322}
+
+\bibitem{RubyMailGem2016}
+{Ruby Mail Gem}: \url{https://rubygems.org/gems/mail}
 
 \bibitem{sql2}
 Sadeghian, A., Zamani, M., Manaf, A.A.: A taxonomy of sql injection detection
@@ -95,9 +200,20 @@ Sadeghian, A., Zamani, M., Manaf, A.A.: A taxonomy of sql injection detection
 Shkapenyuk, V., Suel, T.: Design and implementation of a high-performance
   distributed web crawler pp. 357--368 (2002)
 
+\bibitem{stuttard2011web}
+Stuttard, D., Pinto, M.: The Web Application Hacker's Handbook: Finding and
+  Exploiting Security Flaws. John Wiley \& Sons (2011)
+
 \bibitem{commandinjection}
 Su, Z., Wassermann, G.: The essence of command injection attacks in web
   applications. In: ACM SIGPLAN Notices. vol.~41, pp. 372--382. ACM (2006)
+
+\bibitem{SwiftMailer2016}
+{SwiftMailer}: \url{http://swiftmailer.org/}
+
+\bibitem{Terada2015}
+Terada, T.: {SMTP Injection via recipient email addresses}. {MBSD White Paper}
+  (December 2015)
 
 \bibitem{Tobozo}
 Tobozo: {Mail headers injections with PHP}.
@@ -106,5 +222,14 @@ Tobozo: {Mail headers injections with PHP}.
 \bibitem{W3techs}
 W3techs: {Usage Statistics and Market Share of PHP for Websites, February
   2016}. \url{http://w3techs.com/technologies/details/pl-php/all/all} (2016)
+
+\bibitem{captchas}
+Yan, J., Ahmad, A.S.E.: Breaking visual captchas with naive pattern recognition
+  algorithms. In: Computer Security Applications Conference, ACSAC 2007 (Dec
+  2007)
+
+\bibitem{zanero2005automatic}
+Zanero, S., Carettoni, L., Zanchetta, M.: Automatic detection of web
+  application security flaws. Black Hat Briefings  (2005)
 
 \end{thebibliography}

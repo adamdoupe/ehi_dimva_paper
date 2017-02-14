@@ -5,49 +5,54 @@ The style file: splncs03.bst
 Database file #1: biblio.bib
 Warning--to sort, need author or key in cve
 Warning--to sort, need author or key in nutch
+Warning--to sort, need author or key in whois
+Warning--to sort, need author or key in virustotal
+Warning--to sort, need author or key in CF7
+Warning--to sort, need author or key in Tendencies2014
+Warning--empty journal in rfc2142
 Warning--empty journal in rfc2616
 Warning--empty journal in rfc5322
 Warning--empty journal in ShkapenyukTorstenSuel2001
 Warning--can't use both volume and number fields in commandinjection
-You've used 25 entries,
+You've used 54 entries,
             2785 wiz_defined-function locations,
-            723 strings with 8142 characters,
-and the built_in function-call counts, 10157 in all, are:
-= -- 803
-> -- 272
-< -- 8
-+ -- 118
-- -- 90
-* -- 577
-:= -- 1313
-add.period$ -- 25
-call.type$ -- 25
-change.case$ -- 131
+            870 strings with 12387 characters,
+and the built_in function-call counts, 21945 in all, are:
+= -- 1728
+> -- 596
+< -- 15
++ -- 256
+- -- 198
+* -- 1249
+:= -- 2826
+add.period$ -- 54
+call.type$ -- 54
+change.case$ -- 282
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 921
-empty$ -- 1036
-format.name$ -- 102
-if$ -- 2224
+cite$ -- 65
+duplicate$ -- 1996
+empty$ -- 2254
+format.name$ -- 223
+if$ -- 4812
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 184
-newline$ -- 80
-num.names$ -- 44
-pop$ -- 427
+int.to.str$ -- 54
+missing$ -- 393
+newline$ -- 167
+num.names$ -- 94
+pop$ -- 924
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 208
 quote$ -- 0
-skip$ -- 282
+skip$ -- 611
 stack$ -- 0
-substring$ -- 474
-swap$ -- 422
-text.length$ -- 8
+substring$ -- 1030
+swap$ -- 910
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
-warning$ -- 6
-while$ -- 81
-width$ -- 27
-write$ -- 228
-(There were 6 warnings)
+type$ -- 210
+warning$ -- 11
+while$ -- 170
+width$ -- 56
+write$ -- 483
+(There were 11 warnings)
