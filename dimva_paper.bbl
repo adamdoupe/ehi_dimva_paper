@@ -1,21 +1,110 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
+
+\bibitem{nutch}
+{Apache Nutch}. \url{http://nutch.apache.org/}
+
+\bibitem{cve}
+{CVE - Common Vulnerabilities and Exposures (CVE)} (2016),
+  \url{http://cve.mitre.org/}
 
 \bibitem{acumonitor}
 {Acunetix}: {AcuMonitor: For detecting Email Header Injection, Blind XSS and
   SSRF - Acunetix}.
   \url{http://www.acunetix.com/vulnerability-scanner/acumonitor-blind-xss-detection/}
 
+\bibitem{Beizer:1995:BTT:202699}
+Beizer, B.: Black-box Testing: Techniques for Functional Testing of Software
+  and Systems. John Wiley \& Sons, Inc., New York, NY, USA (1995)
+
+\bibitem{httpperf}
+Bhide, C.W., Singh, J., Oestreicher, D.: Performance optimizations for computer
+  networks utilizing http (Dec~22 1998), uS Patent 5,852,717
+
+\bibitem{sql1}
+Boyd, S.W., Keromytis, A.D.: Sqlrand: Preventing sql injection attacks. In:
+  Applied Cryptography and Network Security. pp. 292--302. Springer (2004)
+
+\bibitem{spoofing_attack}
+Felten, E.W., Balfanz, D., Dean, D., Wallach, D.S.: Web spoofing: An internet
+  con game. Software World  28(2) (1997)
+
+\bibitem{rfc2616}
+Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Berners-Lee, T., Masinter,
+  L., Leach, P.: {RFC 2616}  (1999), \url{https://www.ietf.org/rfc/rfc2616.txt}
+
+\bibitem{sql0}
+Halfond, W.G., Viegas, J., Orso, A.: A classification of sql-injection attacks
+  and countermeasures. In: Proceedings of the IEEE Symposium on Secure Software
+  Engineering (2006)
+
+\bibitem{Herzog.2014}
+Herzog, A.: {Full Disclosure: JavaMail SMTP Header Injection via method
+  setSubject [CSNC-2014-001]} (2014),
+  \url{http://seclists.org/fulldisclosure/2014/May/81}
+
+\bibitem{phishing}
+Jakobsson, M., Myers, S.: Phishing and countermeasures: understanding the
+  increasing problem of electronic identity theft. John Wiley \& Sons (2006)
+
+\bibitem{Injection1}
+Jim, T., Swamy, N., Hicks, M.: Defeating script injection attacks with
+  browser-enforced embedded policies. In: Proceedings of the 16th International
+  Conference on World Wide Web. pp. 601--610. WWW '07, ACM, New York, NY, USA
+  (2007), \url{http://doi.acm.org/10.1145/1242572.1242654}
+
+\bibitem{sessionride}
+Johns, M., Winter, J.: Requestrodeo: Client side protection against session
+  riding. In: Proceedings of the OWASP (2006)
+
+\bibitem{KleinAmit}
+Klein, A.: {[DOM Based Cross Site Scripting or XSS of the Third Kind] Web
+  Security Articles - WebApp Sec} (2005),
+  \url{http://www.webappsec.org/projects/articles/071105.shtml}
+
+\bibitem{DK}
+Kohler, D.: {damonkohler: Email Injection}.
+  \url{http://www.damonkohler.com/2008/12/email-injection.html} (2008)
+
 \bibitem{OWASPT10}
 OWASP: \url{https://www.owasp.org/index.php/OWASP_Top_10}
+
+\bibitem{PHPDocs}
+PHP-Manual: {PHP mail - Send mail}.
+  \url{http://php.net/manual/en/function.mail.php} (2016)
+
+\bibitem{raghavan2000crawling}
+Raghavan, S., Garcia-Molina, H.: Crawling the hidden web. Technical Report
+  2000-36, Stanford InfoLab (2000), \url{http://ilpubs.stanford.edu:8090/456/}
 
 \bibitem{rfc5322}
 Resnick, P.W.: {Internet Message Format - RFC 5322}  (2008),
   \url{https://tools.ietf.org/html/rfc5322}
 
+\bibitem{sql2}
+Sadeghian, A., Zamani, M., Manaf, A.A.: A taxonomy of sql injection detection
+  and prevention techniques. In: Informatics and Creative Multimedia (ICICM),
+  2013 International Conference on. pp. 53--56. IEEE (2013)
+
+\bibitem{Injection}
+{Email Injection - Secure PHP Wiki}.
+  \url{http://securephpwiki.com/index.php/Email Injection} (2010)
+
+\bibitem{ShkapenyukTorstenSuel2001}
+Shkapenyuk, V., Suel, T.: Design and implementation of a high-performance
+  distributed web crawler pp. 357--368 (2002)
+
 \bibitem{commandinjection}
 Su, Z., Wassermann, G.: The essence of command injection attacks in web
   applications. In: ACM SIGPLAN Notices. vol.~41, pp. 372--382. ACM (2006)
+
+\bibitem{Tobozo}
+Tobozo: {Mail headers injections with PHP}.
+  \url{http://www.phpsecure.info/v2/article/MailHeadersInject.en.php} (2004)
+
+\bibitem{W3techs}
+W3techs: {Usage Statistics and Market Share of PHP for Websites, February
+  2016}. \url{http://w3techs.com/technologies/details/pl-php/all/all} (2016)
 
 \end{thebibliography}
