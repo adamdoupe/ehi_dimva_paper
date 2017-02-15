@@ -5,9 +5,6 @@
 \bibitem{nutch}
 {Apache Nutch}. \url{http://nutch.apache.org/}
 
-\bibitem{CF7}
-{ContactForm7}. \url{https://wordpress.org/plugins/contact-form-7}
-
 \bibitem{Tendencies2014}
 {Vexatious Tendencies}.
   \url{https://vexatioustendencies.com/wordpress-plugin-vulnerability-dump-part-2/}
@@ -23,6 +20,9 @@
 \bibitem{virustotal}
 {VirusTotal - Free Online Virus, Malware and URL Scanner} (2016),
   \url{https://www.virustotal.com/}
+
+\bibitem{alexa}
+{Alexa Rankings}. \url{data.alexa.com/data} (2017)
 
 \bibitem{acumonitor}
 {Acunetix}: {AcuMonitor: For detecting Email Header Injection, Blind XSS and

@@ -5,9 +5,9 @@ The style file: splncs03.bst
 Database file #1: biblio.bib
 Warning--to sort, need author or key in cve
 Warning--to sort, need author or key in nutch
+Warning--to sort, need author or key in alexa
 Warning--to sort, need author or key in whois
 Warning--to sort, need author or key in virustotal
-Warning--to sort, need author or key in CF7
 Warning--to sort, need author or key in Tendencies2014
 Warning--empty journal in rfc2142
 Warning--empty journal in rfc2616
@@ -16,43 +16,43 @@ Warning--empty journal in ShkapenyukTorstenSuel2001
 Warning--can't use both volume and number fields in commandinjection
 You've used 54 entries,
             2785 wiz_defined-function locations,
-            870 strings with 12387 characters,
-and the built_in function-call counts, 21945 in all, are:
-= -- 1728
+            870 strings with 12367 characters,
+and the built_in function-call counts, 21999 in all, are:
+= -- 1735
 > -- 596
 < -- 15
 + -- 256
 - -- 198
-* -- 1249
-:= -- 2826
+* -- 1255
+:= -- 2834
 add.period$ -- 54
 call.type$ -- 54
 change.case$ -- 282
 chr.to.int$ -- 0
 cite$ -- 65
-duplicate$ -- 1996
-empty$ -- 2254
+duplicate$ -- 2001
+empty$ -- 2260
 format.name$ -- 223
-if$ -- 4812
+if$ -- 4825
 int.to.chr$ -- 0
 int.to.str$ -- 54
 missing$ -- 393
 newline$ -- 167
 num.names$ -- 94
-pop$ -- 924
+pop$ -- 923
 preamble$ -- 1
 purify$ -- 208
 quote$ -- 0
-skip$ -- 611
+skip$ -- 609
 stack$ -- 0
-substring$ -- 1030
-swap$ -- 910
+substring$ -- 1038
+swap$ -- 912
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 210
 warning$ -- 11
-while$ -- 170
+while$ -- 171
 width$ -- 56
-write$ -- 483
+write$ -- 484
 (There were 11 warnings)
