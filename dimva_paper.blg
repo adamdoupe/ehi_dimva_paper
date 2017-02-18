@@ -6,6 +6,9 @@ Database file #1: biblio.bib
 Warning--to sort, need author or key in cve
 Warning--to sort, need author or key in nutch
 Warning--to sort, need author or key in alexa
+Warning--to sort, need author or key in builtwith
+Warning--to sort, need author or key in wappalyzer
+Warning--to sort, need author or key in CF7
 Warning--to sort, need author or key in whois
 Warning--to sort, need author or key in virustotal
 Warning--to sort, need author or key in Tendencies2014
@@ -14,45 +17,45 @@ Warning--empty journal in rfc2616
 Warning--empty journal in rfc5322
 Warning--empty journal in ShkapenyukTorstenSuel2001
 Warning--can't use both volume and number fields in commandinjection
-You've used 54 entries,
+You've used 57 entries,
             2785 wiz_defined-function locations,
-            870 strings with 12367 characters,
-and the built_in function-call counts, 21999 in all, are:
-= -- 1735
-> -- 596
+            880 strings with 12548 characters,
+and the built_in function-call counts, 22743 in all, are:
+= -- 1791
+> -- 599
 < -- 15
-+ -- 256
++ -- 259
 - -- 198
-* -- 1255
-:= -- 2834
-add.period$ -- 54
-call.type$ -- 54
-change.case$ -- 282
+* -- 1285
+:= -- 2901
+add.period$ -- 57
+call.type$ -- 57
+change.case$ -- 291
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 2001
-empty$ -- 2260
+cite$ -- 71
+duplicate$ -- 2074
+empty$ -- 2365
 format.name$ -- 223
-if$ -- 4825
+if$ -- 5004
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 393
-newline$ -- 167
+int.to.str$ -- 57
+missing$ -- 405
+newline$ -- 176
 num.names$ -- 94
-pop$ -- 923
+pop$ -- 966
 preamble$ -- 1
-purify$ -- 208
+purify$ -- 214
 quote$ -- 0
-skip$ -- 609
+skip$ -- 641
 stack$ -- 0
-substring$ -- 1038
-swap$ -- 912
+substring$ -- 1069
+swap$ -- 940
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
-warning$ -- 11
-while$ -- 171
-width$ -- 56
-write$ -- 484
-(There were 11 warnings)
+type$ -- 222
+warning$ -- 14
+while$ -- 173
+width$ -- 59
+write$ -- 507
+(There were 14 warnings)
