@@ -1,15 +1,16 @@
 \subsection{Analysis of Vulnerable domains}
 
-We performed the following analyses on the vulnerable domains:
+We performed the following analyses on the domains that were found to contain \ehi vulnerability:
 \begin{itemize}
 	\item Checking Alexa rankings of the vulnerable domains.
 	\item Investigating the back-end languages used by the vulnerable domains.
-	\item Analyzing the presence of DKIM (DomainKeys Identified Mail), SPF (Sender Policy Framework), and DMARC (Domain-based Message Authentication, Reporting \& Conformance) mechanisms on these domains.
+%	TODO Adam: Should these abbreviations be expanded here or further down where we explain?
+	\item Analyzing the presence of DKIM~\cite{allman2007domainkeys}, SPF~\cite{schlitt2006sender}, and DMARC~\cite{kucherawy2015domain} mechanisms on these domains.
 \end{itemize}
 
 
 \subsubsection{Alexa rankings of vulnerable domains.}
-We searched through the Alexa rankings data\cite{alexa} for the domains that were found to be vulnerable, and found 135 of these domains in the top 1 million ranked websites. A detailed distribution of the rankings is shown in Table~\ref{tab:alexa} / Figure~\ref{fig:alexa_data_bar} / Figure~\ref{fig:alexa_data_pie}.
+We searched through the Alexa rankings data\cite{alexa} for the domains that were found to be vulnerable, and found 135 of these domains in the top 1 million ranked websites, with 1 website in the top 5,000, and 4 in the top 20,000. A detailed distribution of the rankings is shown in Table~\ref{tab:alexa} / Figure~\ref{fig:alexa_data_bar} / Figure~\ref{fig:alexa_data_pie}.
 
 %TODO Adam: Need to decide if table or graph, if graph, then Pie vs Bar.
 \input{Results/alexa_data_repr}
@@ -23,3 +24,8 @@ We investigated the top 100 vulnerable domains on our list (based on the alexa r
 \input{Results/language_dist}
 
 \subsubsection{Presence of e-mail spoofing protection on vulnerable domains.}
+We investigated the presence of anti-spoofing mechanisms such as DKIM (DomainKeys Identified Mail), SPF (Sender Policy Framework), and DMARC (Domain-based Message Authentication, Reporting \& Conformance) in the vulnerable domains. Protection mechanisms such as these make it harder for an attacker to spoof the \email messages from these domains manually by forging the `From' addresses of \emails.
+
+Out of the top 100 vulnerable domains on our list (based on the alexa rankings), we found that SPF protection was present on 71 of these websites, DKIM on 59 of these websites, and DMARC on 7 of these websites.
+
+This makes \ehi attacks all the more effective as now we have a way to spoof messages from domains that have anti-spoofing mechanisms in place preventing manual spoofing.

@@ -43,6 +43,10 @@ von Ahn, L., Blum, M., Langford, J.: Telling humans and computers apart
   automatically. Commun. ACM  47(2) (2004),
   \url{http://doi.acm.org/10.1145/966389.966390}
 
+\bibitem{allman2007domainkeys}
+Allman, E., Callas, J., Delany, M., Libbey, M., Fenton, J., Thomas, M.:
+  Domainkeys identified mail (dkim) signatures. Tech. rep. (2007)
+
 \bibitem{ACE2016}
 {Apache Commons Email}:  (2016),
   \url{https://commons.apache.org/proper/commons-email}
@@ -148,6 +152,10 @@ Klein, A.: {[DOM Based Cross Site Scripting or XSS of the Third Kind] Web
 Kohler, D.: {damonkohler: Email Injection}.
   \url{http://www.damonkohler.com/2008/12/email-injection.html} (2008)
 
+\bibitem{kucherawy2015domain}
+Kucherawy, M., Zwicky, E.: Domain-based message authentication, reporting, and
+  conformance (dmarc)  (2015)
+
 \bibitem{csrf}
 Lin, X., Zavarsky, P., Ruhl, R., Lindskog, D.: Threat modeling for csrf
   attacks. In: CSE (3). pp. 486--491 (2009)
@@ -200,6 +208,10 @@ Resnick, P.W.: {Internet Message Format - RFC 5322}  (2008),
 Sadeghian, A., Zamani, M., Manaf, A.A.: A taxonomy of sql injection detection
   and prevention techniques. In: Informatics and Creative Multimedia (ICICM),
   2013 International Conference on. pp. 53--56. IEEE (2013)
+
+\bibitem{schlitt2006sender}
+Schlitt, W., Wong, M.W.: Sender policy framework (spf) for authorizing use of
+  domains in e-mail, version 1  (2006)
 
 \bibitem{Injection}
 {Email Injection - Secure PHP Wiki}.
