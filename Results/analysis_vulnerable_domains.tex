@@ -1,12 +1,14 @@
+\vspace{-2.5ex}
 \subsection{Analysis of Vulnerable domains}
-\vspace{-1.5ex}
-We performed the following analyses on the domains that were found to contain \ehi vulnerability:
-\begin{itemize}
-	\item Checking Alexa rankings of the vulnerable domains.
-	\item Investigating the back-end languages used by the vulnerable domains.
-%	TODO Adam: Should these abbreviations be expanded here or further down where we explain?
-	\item Analyzing the presence of DKIM~\cite{allman2007domainkeys}, SPF~\cite{schlitt2006sender}, and DMARC~\cite{kucherawy2015domain} mechanisms on these domains.
-\end{itemize}
+\vspace{-2.5ex}
+
+We performed the following analyses on the domains
+that were found to contain \ehi vulnerability: (1) checking Alexa
+rankings of the vulnerable domains, (2) investigating the back-end
+languages used by the vulnerable domains, and analyzing the presence
+of anti-spoofing defenses, such as DKIM~\cite{allman2007domainkeys},
+SPF~\cite{schlitt2006sender}, and DMARC~\cite{kucherawy2015domain}.
+
 
 \vspace{-1.5ex}
 \subsubsection{Alexa rankings of vulnerable domains.}
@@ -19,7 +21,7 @@ We searched through the Alexa rankings data\cite{alexa} for the domains that wer
 %TODO Adam: Is a table/graph for backend technologies needed?
 % apparently \subsubsection need to have a period at the end.
 \subsubsection{Back-end technologies of vulnerable domains.}
-We investigated the top 100 vulnerable domains on our list (based on the alexa rankings) to find the back-end technologies used by these vulnerable domains to see if there was any recurring pattern. Using BuiltWith~\cite{builtwith} and Wappalyzer~\cite{wappalyzer}, we found that a majority of the vulnerable domains (79\%) used PHP as one of the back-end technologies, while 17\% of domains used WordPress and another 14\% used ASP.Net. Other technologies used include Java (5\%), Ruby on Rails (1\%), and Perl (1\%). We also found a combination of other technologies like Magento, CakePHP, CodeIgniter, Joomla, mail.ru and Drupal being used in conjunction with one of the above languages. A point to be noted is that 4\% of the websites also used Contact Form 7~\cite{CF7}, which is supposed to protect against such attacks.
+We investigated the top 100 vulnerable domains on our list (based on the alexa rankings) to find the back-end technologies used by these vulnerable domains to see if there was any recurring pattern. Using BuiltWith~\cite{builtwith} and Wappalyzer~\cite{wappalyzer}, we found that a majority of the vulnerable domains (79\%) used PHP as one of the back-end technologies, while 17\% of domains used WordPress and another 14\% used ASP.Net. Other technologies used include Java (5\%), Ruby on Rails (1\%), and Perl (1\%). We also found a combination of other technologies like Magento, CakePHP, CodeIgniter, Joomla, mail.ru and Drupal being used in conjunction with one of the above languages. 4\% of the websites also used Contact Form 7~\cite{CF7}, which is supposed to protect against such attacks.
 
 \input{Results/language_dist}
 \vspace{-1.5ex} 
