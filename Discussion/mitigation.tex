@@ -1,4 +1,5 @@
 \subsection{Mitigation Strategy}
+\vspace{-1ex}
 \label{disc:mitigation}
 After demonstrating that \ehi vulnerabilities exist on the web at large, we now describe the most common measures that can be taken to prevent the occurrence of this vulnerability, or at least reduce the impact.
 
@@ -27,7 +28,7 @@ Table~\ref{tab:maillib}.
 		\caption[\titlecap{Mail libraries that prevent e-mail header
             injection}]{Mail libraries that prevent e-mail header
           injection.}
-        \vspace{-5ex}        
+        \vspace{-10ex}        
 		\label{tab:maillib}
 	\end{table}
 
@@ -41,7 +42,7 @@ production, or lack of support infrastructure), developers can
 choose to perform proper input sanitization. Sanitization should be
 done with RFC5322~\cite{rfc5322} in mind to
 ensure that all edge cases are covered.
-	
+\vspace{-1ex}
 %% Client Side validation alone is not sufficient, and must be supplemented by server-side validation to mitigate the attack. Constant updates to validation methods are required so that new attack vectors do not harm the website in any way.
 %% Test driven development for such validation methods is also encouraged so that we can be reasonably sure of our defense mechanisms.
 
