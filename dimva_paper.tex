@@ -13,6 +13,7 @@
 \definecolor{darkgreen}{rgb}{0,0.7,0}
 \usepackage[justification=centering]{caption}
 \captionsetup[table]{skip=1pt}
+\usepackage{wrapfig}
 
 % Great package for spaces in commands
 \usepackage{xspace}
@@ -152,7 +153,10 @@
 \input{conclusion}
 
 
-% adding bibliography here, apparently LNCS prefers inline instead of .bib
+% adding bibliography here, apparently LNCS prefers inline instead of
+% .bib
+{\footnotesize
 \bibliographystyle{splncs03}
 \bibliography{biblio}
+}
 \end{document}
