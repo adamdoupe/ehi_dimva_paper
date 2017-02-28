@@ -3,13 +3,12 @@
 		Because our system is fully automated, it is also susceptible to being stopped by mechanisms in web applications that prevent automated crawls or form submissions. A common reason for our fuzzing attempts to fail is the bot-blocking mechanisms built into the web applications. CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart)~\cite{captchas2} pose a very difficult problem for our system to exploit \ehi, even if it is present.
 		Other measures such as hidden form fields and CSRF (Cross-site Request Forgery~\cite{csrf}) tokens are also often used to detect bots~\cite{captchas3,captchas2}.
 
-		We made sure that we do not fuzz hidden fields in the form, and because our system does not depend on authenticated sessions, CSRF tokens do not pose an issue. However, despite considerable active research in breaking CAPTCHAs~\cite{captchas2,captchas}, breaking CAPTCHAs remains out of the scope of this project. 
+		We made sure that we do not fuzz hidden fields in the form, and as our system does not depend on authenticated sessions, CSRF tokens do not pose an issue. However, despite considerable active research in breaking CAPTCHAs~\cite{captchas2,captchas}, breaking CAPTCHAs remains out of the scope of this project. 
 		
 	   Due to the growing emphasis on responsive web applications, more and more web applications are being built with only client-side JavaScript. Even conventional web applications use JavaScript to dynamically insert content and update the pages. This trend means that these dynamically injected HTML components are not part of the initial HTML that is sent to the client by the server.
 
-		Thus, our system will not see dynamically injected forms and hence is unable to detect whether \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
+		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
 		
-		%TODO Adam: added a table here, and explanation about performance tradeoffs with Selenium and bs4.
 		A comparison of the running times between the different approaches is shown in Table~\ref{tab:perf}. We chose not to use Selenium as it results in a slowdown of \slowSelenium. 
 		
 		\begin{table}

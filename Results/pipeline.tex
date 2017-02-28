@@ -4,7 +4,7 @@ Table~\ref{tab:pipeline} showcases the data gathered by our pipeline, with the d
 
 In our fuzzing attempts, the same behavior is observed. We fuzzed \fuzzed\ forms with the regular payload, which resulted in a total of \recd\ e-mails~(\recdDelta). After analysis of the received e-mails, we further fuzzed \malfuzzed\ forms, which resulted in \success\ e-mails (\successDelta) which contain the vulnerability across \ips IP addresses from \domains domains.
 
-We attribute the difference in the number of forms found to the number of forms fuzzed (a difference of \diffFoundFuzz forms) to the presence of bot-blocking mechanisms on a website (discussed in Section~\ref{limitations}), though we do not know what percentage was caused by the individual bot-blocking mechanisms discussed in Section~\ref{limitations}. 
+We attribute the difference in the number of forms found to the number of forms fuzzed (a difference of \diffFoundFuzz forms) to the presence of bot-blocking mechanisms on a website (discussed in Section~\ref{limitations}), though we do not know what percentage was caused by each bot-blocking mechanism discussed in Section~\ref{limitations}. 
 
 We would like to remark that over 1\% of the forms that were not fuzzed (100 out of \diffFoundFuzz) were also tested manually using PostMan to generate HTTP requests with payloads to verify that our system was working as intended.
 
