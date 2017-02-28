@@ -1,9 +1,14 @@
 \subsection{Impact of \ehi}
 \vspace{-1ex}
-The impact of an \ehi vulnerability can be far-reaching. According to
-w3tech, PHP, Java, Python, and Ruby (combined) account for over
-85\%\, of the server-side programming languages in
-websites measured, and the default implementation of the \email functionality of these languages is vulnerable to \ehi. 
+
+The impact of an \ehi vulnerability can be far-reaching.
+According to w3tech, PHP, Java, Python, and Ruby (combined) account
+for over 85\%\, of the server-side programming languages in websites
+measured, and the default implementation of the \email functionality
+of these languages is vulnerable to \ehi. An \ehi vulnerability can be
+exploited to do potentially any of the following:
+
+
 
 
 
@@ -27,11 +32,14 @@ websites measured, and the default implementation of the \email functionality of
 %% 	\label{tab:usage}
 %% \end{table}
 
-An \ehi vulnerability can be exploited to do potentially any of the
-following:
-
-\noindent \textbf{Phishing and Spoofing Attacks} 
-    Phishing~\cite{phishing} (a variation of spoofing~\cite{spoofing_attack}) refers to an attack where the recipient of an \email is made to believe that the \email is  legitimate when it was really created by a malicious party. The \email usually redirects the victim to a malicious website, which then steals their credentials or infects their computer with malware (via a drive-by-download).  
+\noindent \textbf{Phishing and Spoofing Attacks}
+Phishing~\cite{phishing} (a variation of
+spoofing~\cite{spoofing_attack}) refers to an attack where the
+recipient of an \email is made to believe that the \email is
+legitimate when it was really created by a malicious party. The \email
+usually redirects the victim to a malicious website, which then steals
+their credentials or infects their computer with malware (via a
+drive-by-download).
     
     \ehi gives attackers the ability to inject arbitrary headers into an \email sent by a website \emph{and control the output of the \email}. This adds credibility to the generated \email, as it is sent from the website's mail server and users (and anti-spam defenses) are more likely to trust an e-mail that is received from the proper mail server. Therefore, attackers could leverage \ehi vulnerabilities to perform enhanced phishing attacks. 
 	

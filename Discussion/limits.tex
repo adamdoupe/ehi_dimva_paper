@@ -8,11 +8,8 @@
 		
 	   Due to the growing emphasis on responsive web applications, more and more web applications are being built with only client-side JavaScript. Even conventional web applications use JavaScript to dynamically insert content and update the pages. This trend means that these dynamically injected HTML components are not part of the initial HTML that is sent to the client by the server.
 
-		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
-		
-		A comparison of the running times between the different approaches is shown in Table~\ref{tab:perf}. We chose not to use Selenium as it results in a slowdown of \slowSelenium. 
-		
-		\begin{table}
+       		\begin{wraptable}{r}{7.4cm}
+%		\begin{table}[tb]
 			\centering
 			\scriptsize
 			\begin{tabular}{|p{4cm}|c|c|}
@@ -32,7 +29,13 @@
 			\caption[\titlecap{}]{Running times in seconds for crawling, parsing, and detecting presence of \email fields in 1000 random web pages.}
             \vspace{-5ex}
 			\label{tab:perf}
-		\end{table}
+            %		\end{table}
+        \end{wraptable}
+
+		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
+		
+		A comparison of the running times between the different approaches is shown in Table~\ref{tab:perf}. We chose not to use Selenium as it results in a slowdown of \slowSelenium. 
+
 
         Because we search for the words \texttt{e-mail}, \texttt{mail}, or \texttt{email} within the HTML form, if the website does not use English names for its forms, our system will not be able to find the presence of an \email field. An example is by using the French word for \texttt{e-mail}---courrier {{\'e}}lectronique--- our system is unable to find the presence of the e-mail field. 
         
