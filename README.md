@@ -13,3 +13,6 @@
 	* Chrisper --> Tool to detect bugs according to `bugs in writing` book.
 * This is for DIMVA, 2017. Deadline is extended to 27th feb.
 * 20 pages limit, LNCS format.
+* Paper submitted.
+* Notification is April 10.
+* Fingers crossed.
