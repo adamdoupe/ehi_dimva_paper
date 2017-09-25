@@ -1,5 +1,5 @@
 \section{Introduction}\label{sec:Introduction}
-\vspace{-2.5ex}
+
 The World Wide Web has single-handedly brought about a change in the way we use computers. The ubiquitous nature of the web made it possible for anyone to access information and services anywhere and on multiple devices such as phones, laptops, TVs, and cars. This access has ushered in an era of web applications which depend on user input. 
 While the rapid pace of development has improved the speed of
 information dissemination, it comes at a cost. As users move more and
@@ -10,7 +10,7 @@ Many common and well-known web application vulnerabilities, such as SQL Injectio
 
 \ehi vulnerabilities are a lesser-known command injection vulnerability. We verified that this vulnerability exists in the implementation of the built-in \email functionality in the popular languages PHP, Java, Python, and Ruby. The format of \email messages is defined by the Simple Mail Transfer Protocol (SMTP)~\cite{rfc5322}. Each \email message is represented by a series of headers separated by newlines, followed by the body content (separated from the headers by two newlines). Some of these headers are mandatory (\texttt{From}, \texttt{To}, \texttt{Date}), but the headers could also include other information such as the \texttt{Subject}, \texttt{BCC}, etc.
 
-With the proper injection string, \ehi vulnerabilities can be exploited by an attacker to inject additional headers, modify existing headers, or alter the contents of the \email---while still appearing to be from a legitimate source. \ehi exploits allow an attacker to perform \email spoofing, resulting in phishing attacks \emph{that are sent from the actual \email server}.
+With the proper exploit injection string, \ehi vulnerabilities can be exploited by an attacker to inject additional headers, modify existing headers, or alter the contents of the \email---while still appearing to be from a legitimate source. \ehi exploits allow an attacker to perform \email spoofing, resulting in phishing attacks \emph{that are sent from the actual \email server}, and thus bypass \email spoofing technologies, such as DKIM~\cite{allman2007domainkeys}, SPF~\cite{schlitt2006sender}, and DMARC~\cite{kucherawy2015domain}.
 
 While some command injection vulnerabilities have received extensive attention from the research community, \ehi vulnerabilities have received little focus. In fact, the Acunetix vulnerability scanner contains an AcuMonitor component which claims to detect \ehi vulnerabilities while scanning~\cite{acumonitor}. Unfortunately, as a commercial product, little is known about how AcuMonitor detects \ehi vulnerabilities. 
 
@@ -18,11 +18,12 @@ To shed light on this little-studied vulnerability class, we describe
 \ehi vulnerabilities and measure \ehi vulnerabilities. To perform this
 measurement, we crawled the web, extracted forms with \email fields,
 and injected them with different payloads to infer the existence of an
-\ehi vulnerability. We then audited received \emails to see if any of
-the injected data was present. This allowed us to classify whether a
-particular URL was vulnerable to the attack. Our automated system
-works in a black-box manner, without looking at the web application's
-source code, and only analyzes the payloads in the \emails.
+\ehi vulnerability. We then automatically audited received \emails to
+see if any of the injected data was present. This allowed us to
+classify whether a particular URL was vulnerable to the attack. Our
+automated system works in a black-box manner, without looking at the
+web application's source code, and only analyzes the payloads in the
+\emails.
 
 In summary, we make the following contributions:
 \begin{itemize}

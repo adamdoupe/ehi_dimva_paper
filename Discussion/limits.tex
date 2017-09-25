@@ -1,5 +1,5 @@
 \subsection[Limitations]{Limitations}
-\vspace{-1ex}
+
 \label{limitations}
 		Because our system is fully automated, it is also susceptible to being stopped by mechanisms in web applications that prevent automated crawls or form submissions. A common reason for our fuzzing attempts to fail is the bot-blocking mechanisms built into the web applications. CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart)~\cite{captchas2} pose a very difficult problem for our system to exploit \ehi, even if it is present.
 		Other measures such as hidden form fields and CSRF (Cross-site Request Forgery~\cite{csrf}) tokens are also often used to detect bots~\cite{captchas3,captchas2}.
@@ -8,8 +8,8 @@
 		
 	   Due to the growing emphasis on responsive web applications, more and more web applications are being built with only client-side JavaScript. Even conventional web applications use JavaScript to dynamically insert content and update the pages. This trend means that these dynamically injected HTML components are not part of the initial HTML that is sent to the client by the server.
 
-       		\begin{wraptable}{r}{7.4cm}
-%		\begin{table}[tb]
+%       		\begin{wraptable}{r}{7.4cm}
+		\begin{table}[tb]
 			\centering
 			\scriptsize
 			\begin{tabular}{|p{4cm}|c|c|}
@@ -27,10 +27,10 @@
 				\hline
 			\end{tabular}
 			\caption[\titlecap{}]{Running times in seconds for crawling, parsing, and detecting presence of \email fields in 1000 random web pages.}
-            \vspace{-5ex}
+            
 			\label{tab:perf}
-            %		\end{table}
-        \end{wraptable}
+        \end{table}
+%        \end{wraptable}
 
 		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
 		

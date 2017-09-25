@@ -1,12 +1,11 @@
 % This is LLNCS.DOC the documentation file of
 % the LaTeX2e class from Springer-Verlag
 % for Lecture Notes in Computer Science, version 2.4
-\documentclass{llncs}
-\usepackage{llncsdoc}
+\documentclass[sigconf, anonymous]{acmart}
 %
 \usepackage{graphicx}
 \def\baselinestretch{0.96}
-\usepackage[pageanchor=true,hidelinks]{hyperref}
+%\usepackage[pageanchor=true,hidelinks]{hyperref}
 \usepackage{color}
 \definecolor{mygray}{rgb}{0.6,0.6,0.6}
 \definecolor{lightgray}{rgb}{0.92,0.92,0.92}
@@ -24,6 +23,17 @@
 % for title caps
 \usepackage{titlecaps}
 \Addlcwords{and, the, or, of, that, our, by, a, prevent, for}
+ 
+\fancyhf{} % Remove fancy page headers 
+\fancyhead[C]{Anonymous submission \#1645} % TODO: replace 9999 with your paper number
+\fancyfoot[C]{\thepage}
+
+\setcopyright{none} % No copyright notice required for submissions
+\acmConference[Anonymous Submission to SAC 2018]{}{}{}
+\acmYear{2017}
+
+\settopmatter{printacmref=false, printccs=true, printfolios=true} % We want page numbers on submissions
+
 
 % default options for listings
 \usepackage{listings}
@@ -107,6 +117,8 @@
 \newcommand{\Email}{E-\nobreak{}mail\xspace}        
 \newcommand{\Emails}{\Email{}s\xspace}
 
+\widowpenalty=10000
+\clubpenalty=10000
 
 
 \begin{document}
@@ -114,29 +126,32 @@
 \title{Measuring E-Mail Header Injections on the World Wide Web}
 
 
-\author{
-	Sai Prashanth Chandramouli\inst{1}
-	\and Pierre-Marie Bajan\inst{2}
-	\and Christopher Kruegel\inst{3}
-	\and Giovanni Vigna\inst{3}
-	\and Ziming Zhao\inst{1}
-	\and Adam Doup\'e\inst{1}
-	\and Gail-Joon Ahn\inst{1}
-	}
+%% \author{
+%% 	Sai Prashanth Chandramouli\inst{1}
+%% 	\and Pierre-Marie Bajan\inst{2}
+%% 	\and Christopher Kruegel\inst{3}
+%% 	\and Giovanni Vigna\inst{3}
+%% 	\and Ziming Zhao\inst{1}
+%% 	\and Adam Doup\'e\inst{1}
+%% 	\and Gail-Joon Ahn\inst{1}
+%% 	}
 
-\institute{
-	Arizona State University\\
-	\email{\{saipc, zzhao30, doupe, gahn\}@asu.edu}
-	\and IRT SystemX\\
-	\email{pierre-marie.bajan@irt-systemx.fr}
-	\and University of California, Santa Barbara\\
-	\email{\{chris, vigna\}@cs.ucsb.edu}
-	}
+%% \institute{
+%% 	Arizona State University\\
+%% 	\email{\{saipc, zzhao30, doupe, gahn\}@asu.edu}
+%% 	\and IRT SystemX\\
+ %% 	\email{pierre-marie.bajan@irt-systemx.fr}
+%% 	\and University of California, Santa Barbara\\
+%% 	\email{\{chris, vigna\}@cs.ucsb.edu}
+%% 	}
 
-\maketitle
 
 \renewcommand{\email}{e-\nobreak{}mail\xspace}
 \input{abstract}
+
+\keywords{}
+
+\maketitle
 
 \input{introduction}
 

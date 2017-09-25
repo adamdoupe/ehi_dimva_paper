@@ -1,7 +1,17 @@
-\vspace{-2.5ex}
+
 \section{Evaluation}
-\vspace{-2.5ex}
-We ran our system on the web at large, attempting to discover \ehi vulnerabilities in web applications. 
+
+We ran our system on the web at large, attempting to discover \ehi
+vulnerabilities in web applications. We used as a seed to
+\texttt{Crawler} the Alexa top 10,000 websites as well as a feed of
+10,000 random blog pings per day from \url{weblogs.com}. All domains
+were crawled to a maximum depth of four, and the crawler respected the
+\texttt{robots.txt} directive. This seed enabled \texttt{Crawler} to
+get an overview of not only the popular websites (from the Alexa top
+10k) but also the long-tail of blog posts and websites that they
+linked to.
+
+
 \input{Results/pre_result}
 %\input{Results/fuzz_result}
 \input{Results/analysis}
